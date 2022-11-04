@@ -38,11 +38,14 @@ class MyApp extends StatelessWidget {
     return MultiBlocProvider(
       providers: [
         BlocProvider(
-          create: (context) => NewsCubit()..getBusiness(),
+          create: (context) =>
+          NewsCubit()
+            ..getBusiness(),
         ),
         BlocProvider(
           create: (context) =>
-              ThemeModeCubit()..changeAppMode(fromShared: isDark),
+          ThemeModeCubit()
+            ..changeAppMode(fromShared: isDark),
         )
       ],
       child: BlocConsumer<ThemeModeCubit, ThemeModeStates>(
@@ -116,7 +119,6 @@ class MyApp extends StatelessWidget {
               ),
               // The Old Color
               // scaffoldBackgroundColor: HexColor('333739'),
-
               scaffoldBackgroundColor: HexColor('#292C2E'),
               textTheme: TextTheme(
                 bodyText1: TextStyle(
@@ -126,7 +128,9 @@ class MyApp extends StatelessWidget {
                 ),
               ),
             ),
-            themeMode: ThemeModeCubit.get(context).isDark
+            themeMode: ThemeModeCubit
+                .get(context)
+                .isDark
                 ? ThemeMode.dark
                 : ThemeMode.light,
             home: Directionality(
