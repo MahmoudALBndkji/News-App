@@ -1,13 +1,9 @@
-import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:news_app/layout/news_app/cubit/states.dart';
 import 'package:news_app/layout/news_app/cubit/themeModeCubit.dart';
-import 'package:news_app/layout/news_app/cubit/themeModeCubit.dart';
-import 'package:news_app/layout/news_app/cubit/themeModeCubit.dart';
 import 'package:news_app/modules/business/business_screen.dart';
 import 'package:news_app/modules/science/science_screen.dart';
-import 'package:news_app/modules/settings_screen/settings_screen.dart';
 import 'package:news_app/modules/sports/sports_screen.dart';
 import 'package:news_app/shared/network/remote/dio_helper.dart';
 

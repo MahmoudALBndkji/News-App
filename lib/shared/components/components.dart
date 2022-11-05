@@ -83,24 +83,24 @@ Widget articleBuilder(list, BuildContext context, {isSearch = false}) =>
       condition: list.length > 0,
       builder: (context) => Stack(
         children: [
-          Padding(
-            padding: EdgeInsets.only(
-                top: 10.0, left: 10.0, right: 10.0, bottom: 150.0),
-            child: Container(
-              decoration: BoxDecoration(
-                color: ThemeModeCubit.get(context).isDark
-                    ? Colors.blue[300]
-                    : Colors.grey[300],
-                borderRadius: BorderRadius.only(
-                  topLeft: Radius.circular(45.0),
-                  bottomRight: Radius.circular(90.0),
-                  topRight: Radius.circular(2.0),
-                  bottomLeft: Radius.circular(2.0),
-
-                ),
-              ),
-            ),
-          ),
+          // Padding(
+          //   padding: EdgeInsets.only(
+          //       top: 10.0, left: 10.0, right: 10.0, bottom: 150.0),
+          //   child: Container(
+          //     decoration: BoxDecoration(
+          //       color: ThemeModeCubit.get(context).isDark
+          //           ? Colors.blue[300]
+          //           : Colors.grey[300],
+          //       borderRadius: BorderRadius.only(
+          //         topLeft: Radius.circular(45.0),
+          //         bottomRight: Radius.circular(90.0),
+          //         topRight: Radius.circular(2.0),
+          //         bottomLeft: Radius.circular(2.0),
+          //
+          //       ),
+          //     ),
+          //   ),
+          // ),
           Center(
             child: Container(
               padding: EdgeInsets.all(15.0),
@@ -126,7 +126,7 @@ Widget articleBuilder(list, BuildContext context, {isSearch = false}) =>
                 ),
                 child: Image.asset(
                   'assets/images/news2.png',
-                  color: Colors.white,
+                  color: Colors.brown,
                   width: MediaQuery.of(context).size.width / 2,
                 ),
               ),
